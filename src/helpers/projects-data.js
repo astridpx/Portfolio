@@ -10,16 +10,16 @@ export const projectsData = [
     url: "https://astridpx.github.io/coffee-shop/",
     github: "https://github.com/astridpx/coffee-shop",
     details:
-      "Barista is a Coffee Website is a responsive website  that can access on small and large screen, it is only a template and has no functions. This is built in REACT JS and CSS.",
+      "Barista is a Coffee Website, a first project I made on framework. I made this responsive  that can be accessible on both small and large screen, it is only a template and has no functions. This is built in REACT JS and CSS.",
   },
   {
     id: 2,
     img: Hotel,
-    title: "MRstudio HOTEL BOOKING ",
+    title: "MrStudio HOTEL BOOKING ",
     url: "https://hotel-booking-client-fmrs.onrender.com/",
     github: "https://github.com/astridpx/REACT-HOTEL-BOOKING-CLIENT",
     details:
-      "MRstudio is a hotel website template. It is a reponsive website that can be access on small and large screen. This website has a CRUD operations and sending email operations using Nodemailer. This is built in REACT JS and Tailwind CSS for frontend and Node Js, Express and MongoDB for the backend.",
+      "MRstudio is a hotel website. It is a reponsive website that can be accessible on both small and large screen. This website has a CRUD operations and sending email operations using Nodemailer. A user can be signed only with their google account. This is built in REACT JS and Tailwind CSS for frontend and Node Js, Express and MongoDB for the backend.",
   },
   {
     id: 3,

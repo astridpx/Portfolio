@@ -5,12 +5,15 @@ import { projectsData } from "../helpers/projects-data";
 const Projects = () => {
   return (
     <>
-      <div className="h-max w-full bg-main-dark-blue relative py-12">
+      <div
+        className="h-max w-full bg-main-dark-blue relative py-12"
+        id="projects"
+      >
         <div className="container mx-auto  ">
-          <h1 className="text-center text-gray-100 text-5xl font-bold mb-12">
+          <h1 className="text-center text-gray-200 text-5xl font-bold mb-12">
             My Projects
           </h1>
-          <div className="space-y-8ss">
+          <div className="">
             {/* Projects Cards */}
             {projectsData.map((props) => {
               return (
