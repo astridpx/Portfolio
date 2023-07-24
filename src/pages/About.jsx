@@ -1,5 +1,6 @@
 // import React from 'react'/
-import Profile from "../assets/profile.png";
+// import Profile from "../assets/profile.png";
+import NewProfile from "../assets/newProfile1.jpg";
 import { cardData } from "../helpers/cards-data";
 import Cards from "../components/Skill-Card";
 
@@ -11,7 +12,11 @@ const About = () => {
           <div className="flex items-center  bg-gray-40z0 px-4">
             <div className="flex justify-center gap-x-24 ">
               <div className="w-2/6  cursor-pointer relative z-20  after:absolute after:h-full after:w-full after:-z-10  after:border-8 after:border-main-yellow  after:-bottom-7 after:-right-7 ">
-                <img src={Profile} alt="profile" className="h-[28rem]   " />
+                <img
+                  src={NewProfile}
+                  alt="profile"
+                  className="h-[28rem]  rounded-sm "
+                />
               </div>
 
               <article className="bg-violest-500 w-auto max-w-[50rem]  py-5 space-y-12 ">
@@ -30,7 +35,7 @@ const About = () => {
                 </p>
 
                 <button
-                  className="rounded py-3 px-5 font-semibold bg-main-red text-gray-50 hover:bg-main-red-2 "
+                  className="rounded py-3 px-5 font-semibold bg-main-red text-gray-50 hover:bg-main-red/90"
                   onClick={() => alert("downalod cv")}
                 >
                   DOWNLOAD CV
