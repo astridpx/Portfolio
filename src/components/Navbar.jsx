@@ -51,17 +51,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-{
-  /* <li className="px-4 font-semibold text-lg text-gray-300 hidden md:block">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="px-4 font-semibold text-lg text-gray-300 hidden md:block">
-              <Link to="/">About</Link>
-            </li>
-            <li className="px-4 font-semibold text-lg text-gray-300 hidden md:block">
-              <Link to="/">Works</Link>
-            </li>
-            <li className="px-4 font-semibold text-lg text-gray-300 hidden md:block">
-              <Link to="/">Contact</Link>
-            </li> */
-}
