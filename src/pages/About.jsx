@@ -7,7 +7,7 @@ import Cards from "../components/Skill-Card";
 const About = () => {
   return (
     <>
-      <section className="h-max w-full ">
+      <section className="h-max w-full " id="about">
         <div className="container h-full mx-auto py-12 ">
           <div className="flex items-center  bg-gray-40z0 px-4">
             <div className="flex justify-center gap-x-24 ">
@@ -45,7 +45,7 @@ const About = () => {
           </div>
 
           {/* My Skill Section */}
-          <section className="h-max my-14 py-12 bg-gray-200 w-full">
+          <section className="h-max my-14 py-12 bg-gray-200 w-full" id="skill">
             <h1 className="text-5xl text-center text-main-dark-blue font-bold ">
               My Skills
             </h1>
