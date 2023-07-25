@@ -47,6 +47,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #faf9ff;
+}
+
 /* Fix the issue of particle js overlapping the size */
 #tsparticles {
   position: absolute;
