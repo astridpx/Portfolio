@@ -25,13 +25,20 @@ const About = () => {
                 </h1>
 
                 <p className="text-gray-500 text-lg">
-                  My interest in Computer Programming started back in 2021 when
-                  I feel like I&apos;m being left behind by my classmates in
-                  programming because I don&apos;t have any knowledge about
-                  coding. During my vacation, I spent my time learning the
-                  basics of coding. Before school started, I learned how to
-                  create my own algorithms. Fast-forward today I&apos;m now an
-                  enthusiastic and passionate Developer.
+                  My interest in Computer Programming began back in 2021 when I
+                  feel I&apos;m being left behind my classmates in programming
+                  because I don&apos;t have any knowledge on coding. During my
+                  vacation, I spent my time learning the basics of coding.
+                  Before the new school year started, I learned how to create
+                  website landing page and my own algorithms. Fast-forward today
+                  I&apos;m now a enthusiastic and passionate Developer.
+                </p>
+
+                <p className="text-gray-500 text-lg">
+                  As an aspiring frontend developer, I am eager to explore
+                  entry-level position that will allow me to contribute to
+                  real-world projects and gain valuable experience in a
+                  professional setting.
                 </p>
 
                 <button
