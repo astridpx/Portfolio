@@ -24,7 +24,7 @@ export const projectsData = [
   {
     id: 3,
     img: Library,
-    title: "LIBRARY MANAGEMENT SYSTEM WITH QR-CODE",
+    title: "LIBRARY MANAGEMENT SYSTEM",
     url: "https://svcc-library-system.onrender.com/Login",
     github:
       "https://github.com/astridpx/REACT-SVCC-Library-Management-System-Client",
