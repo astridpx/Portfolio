@@ -3,14 +3,14 @@ import World from "../assets/world.svg";
 const ContactPage = () => {
   return (
     <>
-      <main className="h-screen w-full " id="contact">
-        <section className="container h-full mx-auto  py-8 ">
+      <main className="h-screen w-full overflow-hidden" id="contact">
+        <section className="container h-full mx-auto  py-8 px-4 ">
           <h1 className="text-5xl mb-8 text-main-dark-blue font-bold text-center">
             Get In Touch
           </h1>
 
-          <div className="grid grid-cols-2 pt-12">
-            <div className=" flex justify-center relative  ">
+          <div className="grid lg:grid-cols-2 pt-12 ">
+            <div className="flex lg:justify-center relative  mb-8 ">
               <img
                 src={World}
                 alt="world"
@@ -32,8 +32,8 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <form className="space-y-8 pr-12 ">
-              <div className="flex space-x-4">
+            <form className="space-y-8 md:pr-12 ">
+              <div className="flex space-x-4 ">
                 <input
                   type="email"
                   aria-describedby="helper-text-explanation"

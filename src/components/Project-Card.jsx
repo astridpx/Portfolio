@@ -7,8 +7,8 @@ import { HiOutlineCode } from "react-icons/hi";
 const ProjectCard = ({ image, title, details, url, github }) => {
   return (
     <>
-      <section className="flex space-x-12 py-12 ">
-        <div className="h-64  min-w-[28rem] border-4 border-main-yellow/70 rounded-xl overflow-hidden cursor-pointer flex items-center justify-center hover:scale-105 transition-all duration-100 ">
+      <section className="px-4 space-y-8 lg:flex lg:space-x-12 md:px-0 lg:space-y-0">
+        <div className="h-64  md:min-w-[28rem] border-4 border-main-yellow/90 rounded-xl overflow-hidden cursor-pointer flex items-center justify-center hover:scale-105 transition-all duration-100 ">
           <img
             src={image}
             alt="Project Image"
@@ -16,8 +16,8 @@ const ProjectCard = ({ image, title, details, url, github }) => {
           />
         </div>
 
-        <article className="">
-          <h1 className="font-semibold text-gray-300  text-2xl flex items-center cursor-pointer gap-x-1 mb-4">
+        <article className="w-full bg-slsate-400 ">
+          <h1 className="font-semibold text-gray-300  text-2xl flex items-center cursor-pointer gap-x-2 mb-4">
             <span>
               <RxRocket />
             </span>

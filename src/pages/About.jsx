@@ -7,16 +7,18 @@ import Cards from "../components/Skill-Card";
 const About = () => {
   return (
     <>
-      <section className="h-max w-full " id="about">
+      <main className="h-max w-full " id="about">
         <div className="container h-full mx-auto py-12 ">
-          <div className="flex items-center  bg-gray-40z0 px-4">
-            <div className="flex justify-center gap-x-24 ">
-              <div className="w-2/6  cursor-pointer relative z-20  after:absolute after:h-full after:w-full after:-z-10  after:border-8 after:border-main-yellow  after:-bottom-7 after:-right-7 ">
-                <img
-                  src={NewProfile}
-                  alt="profile"
-                  className="h-[28rem]  rounded-sm "
-                />
+          <section className="flex items-center px-4">
+            <div className=" justify-center gap-x-24 md:flex ">
+              <div className="w-full flex justify-center mb-12">
+                <div className="w-max h-max cursor-pointer relative z-20  after:absolute after:h-full after:w-full after:-z-10  after:border-8 after:border-main-yellow  after:-bottom-6 after:-right-6 md:after:-bottom-7 md:after:-right-7 ">
+                  <img
+                    src={NewProfile}
+                    alt="profile"
+                    className="h-[28rem]  rounded-sm "
+                  />
+                </div>
               </div>
 
               <article className="bg-violest-500 w-auto max-w-[50rem]  py-5 space-y-12 ">
@@ -49,15 +51,15 @@ const About = () => {
                 </button>
               </article>
             </div>
-          </div>
+          </section>
 
           {/* My Skill Section */}
           <section className="h-max my-14 py-12 bg-gray-200 w-full" id="skill">
-            <h1 className="text-5xl text-center text-main-dark-blue font-bold ">
+            <h1 className="text-5xl mb-8 text-center text-main-dark-blue font-bold ">
               My Skills
             </h1>
 
-            <div className="w-5/6 mx-auto p-8 grid grid-cols-4 gap-8 ">
+            <div className="w-full  mx-auto px-4 grid grid-cols-2 gap-4 md:w-5/6 md:grid-cols-4 md:gap-8">
               {/* Cards */}
 
               {cardData.map((data) => {
@@ -73,7 +75,7 @@ const About = () => {
             </div>
           </section>
         </div>
-      </section>
+      </main>
     </>
   );
 };

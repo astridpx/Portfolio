@@ -27,7 +27,7 @@ const Home = () => {
                 alt="Profile"
                 className="h-52 cursor-pointer rounded-full"
               />
-              <h1 className="  text-gray-100 text-5xl font-bold tracking-wide">
+              <h1 className="  text-gray-100 text-4xl font-bold tracking-wide md:text-5xl">
                 John Angelo Lante
               </h1>
               <p className="  text-gray-200 font-semisbold text-lg">
@@ -36,7 +36,7 @@ const Home = () => {
                   options={{
                     strings: [
                       "I'm a Front-End Developer",
-                      "I'm a Enthusiast Developer",
+                      "I'm a Enthusiastic Developer",
                     ],
                     autoStart: true,
                     loop: true,

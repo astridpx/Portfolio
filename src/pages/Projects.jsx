@@ -13,7 +13,7 @@ const Projects = () => {
           <h1 className="text-center text-gray-200 text-5xl font-bold mb-12">
             My Projects
           </h1>
-          <div className="">
+          <div className="space-y-16">
             {/* Projects Cards */}
             {projectsData.map((props) => {
               return (
