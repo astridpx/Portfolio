@@ -63,6 +63,13 @@ const ContactPage = () => {
                   className="max-h-40 min-h-[10rem] h-40 rounded-2xl border w-full border-gray-300 text-gray-400 text-sm outline-gray-300 focus:outline p-2.5 placeholder:font-semibold shadow-sm "
                 ></textarea>
               </div>
+
+              <button
+                type="submit"
+                className="rounded-3xl py-2 px-6 font-bold bg-main-red text-gray-100 hover:bg-main-red/90 -translate-y-2 "
+              >
+                Send Message
+              </button>
             </form>
           </div>
         </section>
