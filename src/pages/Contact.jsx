@@ -1,6 +1,40 @@
+import { useRef } from "react";
 import World from "../assets/world.svg";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const ContactPage = () => {
+  const form = useRef();
+  const subject = "Greetings from Your Portfolio.";
+  const body = "Hi👋";
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${
+    import.meta.env.VITE_MY_EMAIL
+  }&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_KEY,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          toast.success("Message successfully send.");
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          toast.error("This didn't work.");
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <main className="h-screen w-full overflow-hidden" id="contact">
@@ -23,40 +57,51 @@ const ContactPage = () => {
                 <p className="font-bold text-lg text-main-dark-blue/95 ">
                   Start by
                   <span
-                    onClick={() => alert("hello")}
+                    // onClick={() => alert("hello")}
                     className="text-main-red cursor-pointer pl-1"
                   >
-                    Saying Hi👋
+                    <Link target="_blank" to={gmailLink}>
+                      Saying Hi👋
+                    </Link>
                   </span>
                 </p>
               </div>
             </div>
 
-            <form className="space-y-8 md:pr-12 ">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="space-y-8 md:pr-12 "
+            >
               <div className="flex space-x-4 ">
                 <input
-                  type="email"
-                  aria-describedby="helper-text-explanation"
-                  className="rounded-2xl border w-[50%] border-gray-300 text-gray-400 text-sm outline-gray-300 focus:outline p-2.5 placeholder:font-semibold shadow-sm "
+                  type="text"
+                  required
+                  name="from_name"
+                  className="rounded-2xl capitalize border w-[50%] border-gray-300 text-gray-400 text-sm outline-gray-300 focus:outline p-2.5 placeholder:font-semibold shadow-sm "
                   placeholder="Your name"
                 />
                 <input
                   type="email"
-                  aria-describedby="helper-text-explanation"
-                  className="rounded-2xl border w-[50%] border-gray-200 text-gray-400 text-sm outline-gray-200 focus:outline p-2.5 placeholder:font-semibold shadow-sm "
+                  required
+                  name="visitor_email"
+                  className="rounded-2xl lowercase border w-[50%] border-gray-200 text-gray-400 text-sm outline-gray-200 focus:outline p-2.5 placeholder:capitalize placeholder:font-semibold shadow-sm "
                   placeholder="Email adrress"
                 />
               </div>
               <div>
                 <input
                   type="text"
-                  aria-describedby="helper-text-explanation"
-                  className="rounded-2xl border w-full border-gray-300 text-gray-400 text-sm outline-gray-300 focus:outline p-2.5 placeholder:font-semibold shadow-sm "
+                  required
+                  name="subject"
+                  className="rounded-2xl uppercase border w-full border-gray-300 text-gray-400 text-sm outline-gray-300 focus:outline p-2.5 placeholder:font-semibold shadow-sm "
                   placeholder="Subject"
                 />
               </div>
               <div>
                 <textarea
+                  required
+                  name="message"
                   placeholder="Message"
                   cols={30}
                   rows={10}
