@@ -11,12 +11,12 @@ import { SiTiktok } from "react-icons/si";
 
 import Particle from "../components/Particle";
 import Typewriter from "typewriter-effect";
+import { handleClick } from "../helpers/navlink-click";
 
 const fb = "https://www.facebook.com/";
 const github = "https://github.com/astridpx";
 const tiktok = "https://www.tiktok.com/";
 const linkedin = "https://www.linkedin.com/in/iskyyy";
-const contact = document.getElementById("contact");
 
 const Home = () => {
   return (
@@ -90,7 +90,7 @@ const Home = () => {
                 data-aos-duration="2000"
                 data-aos-delay="600"
                 className="rounded py-2 px-6 font-semibold bg-main-red text-gray-50 hover:bg-main-red/80 "
-                onClick={() => contact.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => handleClick(5)}
               >
                 Hire Me
               </button>
