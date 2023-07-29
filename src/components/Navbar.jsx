@@ -13,13 +13,17 @@ const Navbar = () => {
     <>
       {/* <div className="container mx-auto"> */}
       <div className=" bg-main-dark-blue  flex justify-between items-center h-16 relative px-4 md:px-0  ">
-        <h2 className="font-bold text-4xl  space-x-[1.2px] cursor-pointer text-main-yellow ">
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className="font-bold text-4xl  space-x-[1.2px] cursor-pointer text-main-yellow "
+        >
           <span className="I">I</span>
           <span className="text-main-blue">s</span>
           <span className="text-main-red">k</span>
           <span className="text-main-brown">y</span>
         </h2>
-        <nav>
+        <nav data-aos="fade-left" data-aos-duration="3000">
           <ul className="flex items-center">
             {/* MAPPING NAVLINK */}
             {navlink.map((obj) => {
@@ -38,6 +42,8 @@ const Navbar = () => {
 
           {/* //? HAMBURGER MENU */}
           <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
             id="menu-bar"
             className=" md:hidden"
             onClick={() => setOpenMenu(!openMenu)}

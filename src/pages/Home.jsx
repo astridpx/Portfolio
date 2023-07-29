@@ -25,12 +25,23 @@ const Home = () => {
               <img
                 src={NewProfile}
                 alt="Profile"
+                data-aos="zoom-in-left"
+                data-aos-duration="2000"
                 className="h-52 cursor-pointer rounded-full"
               />
-              <h1 className="  text-gray-100 text-4xl font-bold tracking-wide md:text-5xl">
+              <h1
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                className="  text-gray-100 text-4xl font-bold tracking-wide md:text-5xl"
+              >
                 John Angelo Lante
               </h1>
-              <p className="  text-gray-200 font-semisbold text-lg">
+              <p
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="600"
+                className="  text-gray-200 font-semisbold text-lg"
+              >
                 {/* I'm a Fullstack Developer */}
                 <Typewriter
                   options={{
@@ -44,7 +55,12 @@ const Home = () => {
                   }}
                 />
               </p>
-              <div className="flex justify-evenly w-full py-3  ">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-delay="600"
+                className="flex justify-evenly w-full py-3  "
+              >
                 <FaFacebook
                   className=" text-xl cursor-pointer text-gray-100 "
                   onClick={() => alert("helo")}
@@ -64,6 +80,9 @@ const Home = () => {
                 />
               </div>
               <button
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="600"
                 className="rounded py-2 px-6 font-semibold bg-main-red text-gray-50 hover:bg-main-red/80 "
                 onClick={() => alert("downalod cv")}
               >

@@ -39,7 +39,11 @@ const ContactPage = () => {
     <>
       <main className="h-screen w-full overflow-hidden" id="contact">
         <section className="container h-full mx-auto  py-8 px-4 ">
-          <h1 className="text-5xl mb-8 text-main-dark-blue font-bold text-center">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="text-5xl mb-8 text-main-dark-blue font-bold text-center"
+          >
             Get In Touch
           </h1>
 
@@ -51,10 +55,18 @@ const ContactPage = () => {
                 className="w-full h-full scale-125  object-contain absolute opacity-30 -z-10"
               />
               <div className="relative">
-                <h2 className="font-bold text-3xl text-main-dark-blue ">
+                <h2
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  className="font-bold text-3xl text-main-dark-blue "
+                >
                   Let&apos;s talk about everything
                 </h2>
-                <p className="font-bold text-lg text-main-dark-blue/95 ">
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  className="font-bold text-lg text-main-dark-blue/95 "
+                >
                   Start by
                   <span
                     // onClick={() => alert("hello")}
@@ -69,6 +81,8 @@ const ContactPage = () => {
             </div>
 
             <form
+              data-aos="flip-left"
+              data-aos-duration="1000"
               ref={form}
               onSubmit={sendEmail}
               className="space-y-8 md:pr-12 "

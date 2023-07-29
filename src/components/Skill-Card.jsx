@@ -2,7 +2,12 @@
 const SkillCard = ({ title, logo, name }) => {
   return (
     <>
-      <div className="h-36 w-full bg-white rounded shadow-md cursor-pointer hover:scale-105 transition-all duration-75 md:h-44">
+      <div
+        data-aos="flip-left"
+        data-aos-duration="2000"
+        data-aos-delay="400"
+        className="h-36 w-full bg-white rounded shadow-md cursor-pointer hover:scale-105 transition-all duration-75 md:h-44"
+      >
         <h2 className="text-center mb-4 text-xl font-semibold text-main-dark-blue ">
           {title}
         </h2>

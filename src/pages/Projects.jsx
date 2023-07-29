@@ -10,7 +10,11 @@ const Projects = () => {
         id="projects"
       >
         <div className="container mx-auto  ">
-          <h1 className="text-center text-gray-200 text-5xl font-bold mb-12">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="text-center text-gray-200 text-5xl font-bold mb-12"
+          >
             My Projects
           </h1>
           <div className="space-y-16">
