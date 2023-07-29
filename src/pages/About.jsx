@@ -1,8 +1,10 @@
 // import React from 'react'/
 // import Profile from "../assets/profile.png";
 import NewProfile from "../assets/newProfile1.jpg";
+import { Link } from "react-router-dom";
 import { cardData } from "../helpers/cards-data";
 import Cards from "../components/Skill-Card";
+import MyCv from "../assets/CV/My-CV-protected.pdf";
 
 const About = () => {
   return (
@@ -74,9 +76,12 @@ const About = () => {
                   data-aos-duration="1500"
                   data-aos-delay="200"
                   className="rounded py-3 px-5 font-semibold bg-main-red text-gray-50 hover:bg-main-red/90"
-                  onClick={() => alert("downalod cv")}
                 >
-                  DOWNLOAD CV
+                  <span>
+                    <Link to={MyCv} target="_blank" download>
+                      DOWNLOAD CV
+                    </Link>
+                  </span>
                 </button>
               </article>
             </div>
