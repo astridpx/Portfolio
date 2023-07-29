@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar";
 // import Chibi from "../assets/chibi-yellow.png";
 import NewProfile from "../assets/newProfile.jpg";
-
+import { Link } from "react-router-dom";
 // socmedd icons
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 // eslint-disable-next-line no-unused-vars
@@ -11,6 +11,11 @@ import { SiTiktok } from "react-icons/si";
 
 import Particle from "../components/Particle";
 import Typewriter from "typewriter-effect";
+
+const fb = "https://www.facebook.com/";
+const github = "https://github.com/astridpx";
+const tiktok = "https://www.tiktok.com/";
+const linkedin = "https://www.linkedin.com/in/iskyyy";
 
 const Home = () => {
   return (
@@ -61,23 +66,23 @@ const Home = () => {
                 data-aos-delay="600"
                 className="flex justify-evenly w-full py-3  "
               >
-                <FaFacebook
-                  className=" text-xl cursor-pointer text-gray-100 "
-                  onClick={() => alert("helo")}
-                />
-                <BsGithub
-                  className=" text-xl cursor-pointer text-gray-100 "
-                  onClick={() => alert("helo")}
-                />
+                <Link to={fb} target="_blank">
+                  <FaFacebook className=" text-xl cursor-pointer text-gray-100 " />
+                </Link>
+
+                <Link to={github} target="_blank">
+                  <BsGithub className=" text-xl cursor-pointer text-gray-100 " />
+                </Link>
+
                 {/* <BsInstagram className=" text-xl cursor-pointer text-gray-100 " /> */}
-                <SiTiktok
-                  className=" text-xl cursor-pointer text-gray-100 "
-                  onClick={() => alert("helo")}
-                />
-                <FaLinkedin
-                  className=" text-xl cursor-pointer text-gray-100 "
-                  onClick={() => alert("helo")}
-                />
+
+                <Link to={tiktok} target="_blank">
+                  <SiTiktok className=" text-xl cursor-pointer text-gray-100 " />
+                </Link>
+
+                <Link to={linkedin} target="_blank">
+                  <FaLinkedin className=" text-xl cursor-pointer text-gray-100 " />
+                </Link>
               </div>
               <button
                 data-aos="fade-up"
