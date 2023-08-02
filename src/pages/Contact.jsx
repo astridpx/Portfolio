@@ -6,11 +6,7 @@ import { Link } from "react-router-dom";
 
 const ContactPage = () => {
   const form = useRef();
-  const subject = "Greetings from Your Portfolio.";
-  const body = "Hi👋";
-  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${
-    import.meta.env.VITE_MY_EMAIL
-  }&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmail = `mailto:${import.meta.env.VITE_MY_EMAIL}`;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -72,7 +68,7 @@ const ContactPage = () => {
                     // onClick={() => alert("hello")}
                     className="text-main-red cursor-pointer pl-1"
                   >
-                    <Link target="_blank" to={gmailLink}>
+                    <Link target="_blank" to={gmail}>
                       Saying Hi👋
                     </Link>
                   </span>
