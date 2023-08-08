@@ -23,6 +23,7 @@ const About = () => {
                     src={NewProfile}
                     alt="profile"
                     className="h-[28rem]  rounded-sm "
+                    onContextMenu={(e) => e.preventDefault()}
                   />
                 </div>
               </div>

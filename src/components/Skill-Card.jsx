@@ -15,6 +15,7 @@ const SkillCard = ({ title, logo, name }) => {
           src={logo}
           alt={name}
           className="h-20 mx-auto object-contain md:h-28"
+          onContextMenu={e => e.preventDefault()}
         />
       </div>
     </>

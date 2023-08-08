@@ -34,6 +34,7 @@ const Home = () => {
                 data-aos="zoom-in-left"
                 data-aos-duration="2000"
                 className="h-52 cursor-pointer rounded-full"
+                onContextMenu={(e) => e.preventDefault()}
               />
               <h1
                 data-aos="fade-right"

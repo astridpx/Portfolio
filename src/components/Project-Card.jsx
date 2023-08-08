@@ -17,6 +17,7 @@ const ProjectCard = ({ image, title, details, url, github }) => {
             src={image}
             alt="Project Image"
             className="object-fill w-full h-full "
+            onContextMenu={(e) => e.preventDefault()}
           />
         </div>
 
