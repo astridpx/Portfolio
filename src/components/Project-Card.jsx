@@ -21,11 +21,11 @@ const ProjectCard = ({ image, title, details, url, github }) => {
           />
         </div>
 
-        <article className="w-full bg-slsate-400 ">
+        <article className="w-full bg-slsate-400 space-y-4">
           <h1
             data-aos="fade-up"
             data-aos-duration="1500"
-            className="font-semibold text-gray-300  text-2xl flex items-center cursor-pointer gap-x-2 mb-4"
+            className="font-semibold text-gray-300  text-2xl flex items-center gap-x-2 mb-4"
           >
             <span>
               <RxRocket />
@@ -36,7 +36,7 @@ const ProjectCard = ({ image, title, details, url, github }) => {
           <p
             data-aos="fade-up"
             data-aos-duration="1500"
-            className="mb-8  text-gray-400 tracking-wide"
+            className="text-gray-400 tracking-wide"
           >
             {details}
           </p>
